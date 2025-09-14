@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Downloads – Abqeri</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <div class="max-w-3xl mx-auto p-8">
+    <h1 class="text-3xl font-bold mb-4">Verify Downloads</h1>
+    <p class="text-gray-300 mb-4">Every official release is signed and published with SHA-256 checksums. Verify both before use.</p>
+
+    <h2 class="text-2xl font-semibold mt-6 mb-2">1) Import Abqeri PGP public key</h2>
+    <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-sm"><code># Save our public key (replace with real key later)
+curl -sS https://downloads.abqeri.com/keys/abqeri_signing.pub | gpg --import
+# or fetch from keys.openpgp.org once published
+</code></pre>
+
+    <h2 class="text-2xl font-semibold mt-6 mb-2">2) Verify checksum</h2>
+    <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-sm"><code># Mac/Linux
+shasum -a 256 FILENAME > local.sha256 && diff local.sha256 FILENAME.sha256
+
+# Windows (PowerShell)
+Get-FileHash .\FILENAME -Algorithm SHA256 | Format-List</code></pre>
+
+    <h2 class="text-2xl font-semibold mt-6 mb-2">3) Verify signature</h2>
+    <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-sm"><code># Signature verification
+gpg --verify FILENAME.sig FILENAME
+# Expect: "Good signature from Abqeri Releases &lt;releases@abqeri.com&gt;"</code></pre>
+
+    <p class="text-gray-400 mt-6">Questions? Email <a class="text-emerald-400 underline" href="mailto:support@abqeri.com">support@abqeri.com</a></p>
+    <a href="downloads.html" class="text-emerald-400 underline mt-6 inline-block">← Back to Downloads</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "releases": [
+    {
+      "name": "Abqeri SDK (Python)",
+      "version": "0.1.0",
+      "summary": "Client SDK to submit hybrid CPU/GPU/QPU jobs to Abqeri Cloud.",
+      "channel": "preview",
+      "date": "2025-09-13",
+      "url": "https://github.com/abqeri/abqeri-downloads/releases/download/v0.1.0/abqeri-sdk-0.1.0.zip",
+      "checksum_url": "https://github.com/abqeri/abqeri-downloads/releases/download/v0.1.0/abqeri-sdk-0.1.0.sha256",
+      "signature_url": "https://github.com/abqeri/abqeri-downloads/releases/download/v0.1.0/abqeri-sdk-0.1.0.zip.sig"
+    },
+    {
+      "name": "Firmware \u2013 RP2040 UF2",
+      "version": "proto_v2",
+      "summary": "Microcontroller firmware image (.uf2).",
+      "channel": "preview",
+      "date": "2025-09-13",
+      "url": "https://github.com/abqeri/abqeri-downloads/releases/download/proto_v2/firmware-proto_v2.uf2",
+      "checksum_url": "https://github.com/abqeri/abqeri-downloads/releases/download/proto_v2/firmware-proto_v2.uf2.sha256",
+      "signature_url": "https://github.com/abqeri/abqeri-downloads/releases/download/proto_v2/firmware-proto_v2.uf2.sig"
+    },
+    {
+      "name": "FPGA Bitstream",
+      "version": "proto_v2",
+      "summary": "FPGA configuration bitstream.",
+      "channel": "preview",
+      "date": "2025-09-13",
+      "url": "https://github.com/abqeri/abqeri-downloads/releases/download/proto_v2/bitstream-proto_v2.bin",
+      "checksum_url": "https://github.com/abqeri/abqeri-downloads/releases/download/proto_v2/bitstream-proto_v2.bin.sha256",
+      "signature_url": "https://github.com/abqeri/abqeri-downloads/releases/download/proto_v2/bitstream-proto_v2.bin.sig"
+    }
+  ]
+}

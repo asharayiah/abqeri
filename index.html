@@ -1,229 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abqeri Cloud – Hybrid Quantum-Inspired AI</title>
-  <meta name="description" content="Abqeri: Hybrid CPU+GPU+QPU AI for humanity. 100% of profits reinvested into children's welfare."/>
+  <title>Abqeri Cloud – Hybrid CPU+GPU+QPU</title>
+  <meta name="description" content="Run hybrid CPU+GPU+QPU jobs from your browser.">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-  <header class="flex flex-wrap justify-between items-center p-4 bg-gray-800">
-    <h1 class="text-2xl font-bold"><a href="index.html">Abqeri Cloud</a></h1>
-    <nav class="mt-2 md:mt-0">
-      <ul class="flex flex-wrap gap-3 items-center">
-        <li><a href="#pricing" class="hover:underline">Pricing</a></li>
-        <li><a href="#signup" class="ml-2 bg-emerald-500 px-3 py-1 rounded">Early Access</a></li>
-        <li><a href="#humanity-apply" class="bg-emerald-700 px-3 py-1 rounded">Humanity Tier</a></li>
-        <li><a href="#contact-sales" class="bg-blue-600 px-3 py-1 rounded">Contact Sales</a></li>
-        <li><a href="privacy.html" class="hover:underline">Privacy</a></li>
-        <li><a href="impact.html" class="hover:underline">Impact</a></li>
-        <li><a href="tos.html" class="hover:underline">Terms</a></li>
-        <li><a href="refund.html" class="hover:underline">Refunds</a></li>
-        <li><a href="sla.html" class="hover:underline">SLA</a></li>
-      </ul>
+<body class="bg-gray-900 text-white">
+  <header class="p-4 bg-gray-800 flex justify-between">
+    <h1 class="font-bold text-2xl"><a href="index.html">Abqeri Cloud</a></h1>
+    <nav class="space-x-4">
+      <a href="console.html" class="hover:underline">Console</a>
+      <a href="downloads.html" class="hover:underline">Downloads</a>
+      <a href="verify.html" class="hover:underline">Verify</a>
     </nav>
   </header>
 
-  <section id="hero" class="p-10 text-center">
-    <h2 class="text-4xl font-bold mb-4">Smarter AI for Humanity — Available Now in the Cloud</h2>
-    <p class="mb-6 text-gray-300">Hybrid CPU + GPU + QPU compute. Immediate access. 100% of profits reinvested into children’s welfare.</p>
-    <div class="flex gap-3 justify-center">
-      <a href="#signup" class="bg-blue-500 px-6 py-3 rounded-lg text-white font-semibold">Request Early Access</a>
-      <a href="#pricing" class="bg-gray-700 px-6 py-3 rounded-lg text-white">See Pricing</a>
+  <section class="p-10 text-center">
+    <h2 class="text-4xl font-bold mb-4">Hybrid Compute — Now in the Cloud</h2>
+    <p class="text-gray-300 mb-6">Submit jobs to CPU, GPU, and Abqeri QPU services with one unified API.</p>
+    <div class="flex justify-center gap-4">
+      <a href="console.html" class="bg-emerald-600 px-6 py-3 rounded">Open Console</a>
+      <a href="#how" class="bg-gray-700 px-6 py-3 rounded">How it works</a>
     </div>
   </section>
 
-  <section class="p-8 bg-gray-800 text-center">
-    <p class="text-xl">“Abqeri: A company whose financial model is humanity — especially children.”</p>
-    <p class="mt-2 text-gray-300">100% of profits are reinvested into children’s welfare — starting with children in Gaza and orphans worldwide.</p>
+  <section id="how" class="p-10 bg-gray-800">
+    <h3 class="text-2xl font-bold mb-3">How it works</h3>
+    <ol class="list-decimal list-inside text-gray-300 space-y-2">
+      <li>Authenticate (JWT) via the Console.</li>
+      <li>Submit a job (select CPU / GPU / Hybrid) and upload inputs.</li>
+      <li>Track status; download results and signed artifacts.</li>
+    </ol>
   </section>
 
-  <!-- Pricing -->
-  <section id="pricing" class="p-10">
-    <h3 class="text-3xl font-bold text-center mb-8">Subscriptions that Fund Humanity</h3>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-gray-800 rounded-lg p-6 shadow">
-        <h4 class="text-2xl font-bold mb-2">Humanity Tier</h4>
-        <p class="text-emerald-400 mb-4">Free / Sponsored</p>
-        <ul class="text-gray-300 list-disc list-inside mb-4">
-          <li>For researchers, students, NGOs</li>
-          <li>Includes free credits</li>
-          <li>Subsidized by paid tiers</li>
-        </ul>
-        <a href="#humanity-apply" class="block text-center bg-emerald-600 px-4 py-2 rounded">Apply</a>
-      </div>
-      <div class="bg-gray-800 rounded-lg p-6 shadow border border-emerald-500">
-        <h4 class="text-2xl font-bold mb-2">Professional</h4>
-        <p class="text-emerald-400 mb-4">$99 / month</p>
-        <ul class="text-gray-300 list-disc list-inside mb-4">
-          <li>Priority compute + API credits</li>
-          <li>Support & updates</li>
-          <li>Your fee funds the Humanity tier</li>
-        </ul>
-        <a href="https://buy.stripe.com/PROFESSIONAL_PRICE_LINK" class="block text-center bg-emerald-600 px-4 py-2 rounded">Subscribe</a>
-      </div>
-      <div class="bg-gray-800 rounded-lg p-6 shadow">
-        <h4 class="text-2xl font-bold mb-2">Enterprise / Government</h4>
-        <p class="text-emerald-400 mb-4">Custom</p>
-        <ul class="text-gray-300 list-disc list-inside mb-4">
-          <li>SLA, scaling, consulting</li>
-          <li>Custom integrations</li>
-          <li>Profits fund children-focused programs</li>
-        </ul>
-        <a href="#contact-sales" class="block text-center bg-emerald-600 px-4 py-2 rounded">Contact Sales</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Early Access Form -->
-  <section id="signup" class="p-10 bg-gray-800">
-    <h3 class="text-3xl font-bold mb-6 text-center">Request Early Access</h3>
-    <form action="https://formspree.io/f/mzzawyyy" method="POST" class="max-w-xl mx-auto space-y-4">
-      <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off">
-      <input type="hidden" name="_subject" value="Abqeri Early Access Request">
-      <input type="hidden" name="_next" value="thank-you.html">
-
-      <label class="block">
-        <span class="text-sm text-gray-300">Full Name</span>
-        <input name="name" required class="w-full p-3 rounded bg-gray-900 border border-gray-700" placeholder="Your name">
-      </label>
-
-      <label class="block">
-        <span class="text-sm text-gray-300">Email</span>
-        <input type="email" name="email" required class="w-full p-3 rounded bg-gray-900 border border-gray-700" placeholder="you@email.com">
-      </label>
-
-      <label class="block">
-        <span class="text-sm text-gray-300">Organization (optional)</span>
-        <input name="organization" class="w-full p-3 rounded bg-gray-900 border border-gray-700" placeholder="University / Lab / Company">
-      </label>
-
-      <label class="block">
-        <span class="text-sm text-gray-300">Tier</span>
-        <select name="tier" class="w-full p-3 rounded bg-gray-900 border border-gray-700">
-          <option>Humanity (Free/Sponsored)</option>
-          <option>Professional (Paid)</option>
-          <option>Enterprise/Government (Paid)</option>
-        </select>
-      </label>
-
-      <label class="block">
-        <span class="text-sm text-gray-300">Intended Use</span>
-        <textarea name="intent" rows="4" class="w-full p-3 rounded bg-gray-900 border border-gray-700" placeholder="e.g., Alzheimer’s research, education, climate modeling"></textarea>
-      </label>
-
-      <button class="w-full bg-emerald-600 hover:bg-emerald-500 p-3 rounded font-semibold">Submit</button>
-      <p class="text-sm text-gray-400 text-center mt-2">By requesting access, you support our mission: 100% of profits reinvested into children’s welfare.</p>
-    </form>
-  </section>
-
-  <!-- Humanity Tier Application -->
-  <section id="humanity-apply" class="p-10 bg-gray-900">
-    <h3 class="text-3xl font-bold mb-6 text-center">Apply — Humanity Tier (Free/Sponsored)</h3>
-    <form action="https://formspree.io/f/meoldvvn" method="POST" class="max-w-2xl mx-auto grid md:grid-cols-2 gap-4">
-      <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off">
-      <input type="hidden" name="_subject" value="Abqeri Humanity Tier Application">
-      <input type="hidden" name="_next" value="thank-you.html">
-
-      <label class="block md:col-span-1">
-        <span class="text-sm text-gray-300">Full Name</span>
-        <input name="name" required class="w-full p-3 rounded bg-gray-800 border border-gray-700" placeholder="Your name">
-      </label>
-
-      <label class="block md:col-span-1">
-        <span class="text-sm text-gray-300">Email</span>
-        <input type="email" name="email" required class="w-full p-3 rounded bg-gray-800 border border-gray-700" placeholder="you@email.com">
-      </label>
-
-      <label class="block md:col-span-1">
-        <span class="text-sm text-gray-300">Organization / NGO</span>
-        <input name="organization" class="w-full p-3 rounded bg-gray-800 border border-gray-700" placeholder="NGO / School / University">
-      </label>
-
-      <label class="block md:col-span-1">
-        <span class="text-sm text-gray-300">Country</span>
-        <input name="country" class="w-full p-3 rounded bg-gray-800 border border-gray-700" placeholder="Jordan, Morocco, Türkiye, etc.">
-      </label>
-
-      <label class="block md:col-span-1">
-        <span class="text-sm text-gray-300">Project Type</span>
-        <select name="project_type" class="w-full p-3 rounded bg-gray-800 border border-gray-700">
-          <option>Health</option>
-          <option>Education</option>
-          <option>Climate</option>
-          <option>Other</option>
-        </select>
-      </label>
-
-      <label class="block md:col-span-1">
-        <span class="text-sm text-gray-300">Expected Compute Needs</span>
-        <select name="compute" class="w-full p-3 rounded bg-gray-800 border border-gray-700">
-          <option>Small</option>
-          <option>Medium</option>
-          <option>High</option>
-        </select>
-      </label>
-
-      <label class="block md:col-span-2">
-        <span class="text-sm text-gray-300">Short Proposal</span>
-        <textarea name="proposal" rows="5" class="w-full p-3 rounded bg-gray-800 border border-gray-700" placeholder="Briefly describe your use case, beneficiaries, and expected outcomes."></textarea>
-      </label>
-
-      <div class="md:col-span-2">
-        <button class="w-full bg-emerald-600 hover:bg-emerald-500 p-3 rounded font-semibold">Submit Application</button>
-        <p class="text-sm text-gray-400 text-center mt-2">We prioritize projects helping children and public-good research.</p>
-      </div>
-    </form>
-  </section>
-
-  <!-- Enterprise / Government Contact -->
-  <section id="contact-sales" class="p-10 bg-gray-800">
-    <h3 class="text-3xl font-bold mb-6 text-center">Enterprise / Government — Contact Sales</h3>
-    <form action="https://formspree.io/f/mwpnzayk" method="POST" class="max-w-2xl mx-auto grid md:grid-cols-2 gap-4">
-      <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off">
-      <input type="hidden" name="_subject" value="Abqeri Enterprise/Government Inquiry">
-      <input type="hidden" name="_next" value="thank-you.html">
-
-      <label class="block md:col-span-1">
-        <span class="text-sm text-gray-300">Contact Name</span>
-        <input name="contact_name" required class="w-full p-3 rounded bg-gray-900 border border-gray-700" placeholder="Your name">
-      </label>
-
-      <label class="block md:col-span-1">
-        <span class="text-sm text-gray-300">Organization</span>
-        <input name="organization" required class="w-full p-3 rounded bg-gray-900 border border-gray-700" placeholder="Ministry / Enterprise / Institute">
-      </label>
-
-      <label class="block md:col-span-1">
-        <span class="text-sm text-gray-300">Email</span>
-        <input type="email" name="email" required class="w-full p-3 rounded bg-gray-900 border border-gray-700" placeholder="contact@org.tld">
-      </label>
-
-      <label class="block md:col-span-1">
-        <span class="text-sm text-gray-300">Country</span>
-        <input name="country" class="w-full p-3 rounded bg-gray-900 border border-gray-700" placeholder="Country">
-      </label>
-
-      <label class="block md:col-span-2">
-        <span class="text-sm text-gray-300">Use Case / Data Sensitivity</span>
-        <textarea name="use_case" rows="5" class="w-full p-3 rounded bg-gray-900 border border-gray-700" placeholder="Describe goals, data type (PII/PHI?), timelines, and required SLA."></textarea>
-      </label>
-
-      <label class="block md:col-span-1">
-        <span class="text-sm text-gray-300">Target Start Date</span>
-        <input type="date" name="start_date" class="w-full p-3 rounded bg-gray-900 border border-gray-700">
-      </label>
-
-      <div class="md:col-span-2">
-        <button class="w-full bg-emerald-600 hover:bg-emerald-500 p-3 rounded font-semibold">Send</button>
-        <p class="text-sm text-gray-400 text-center mt-2">We respond within 1 business day for Enterprise inquiries.</p>
-      </div>
-    </form>
-  </section>
-
-  <footer class="p-4 bg-gray-900 text-center text-gray-400">
-    <p>© 2025 Abqeri – Smarter AI for Humanity</p>
+  <footer class="p-4 text-center text-gray-400 bg-gray-900">
+    © 2025 Abqeri — Smarter AI for Humanity
   </footer>
 </body>
 </html>

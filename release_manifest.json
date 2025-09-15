@@ -1,6 +1,16 @@
 {
   "releases": [
     {
+      "name": "Abqeri Executive Summary",
+      "version": "0.1.0",
+      "summary": "Client to download Abqeri Executive Summary Bilingual.pdf.",
+      "channel": "preview",
+      "date": "2025-09-13",
+      "url": "https://github.com/asharayiah/abqeri_public/releases/v0.1.0/downloads/Abqeri_Executive_Summary_Bilingual.pdf",
+      "checksum_url": "https://github.com/asharayiah/abqeri_public/releases/v0.1.0/downloads/abqeri-sdk-0.1.0.sha256",
+      "signature_url": "https://github.com/asharayiah/abqeri_public/releases/v0.1.0/downloads/abqeri-sdk-0.1.0.zip.sig"
+    },
+    {
       "name": "Abqeri SDK (Python)",
       "version": "0.1.0",
       "summary": "Client SDK to submit hybrid CPU/GPU/QPU jobs to Abqeri Cloud.",
